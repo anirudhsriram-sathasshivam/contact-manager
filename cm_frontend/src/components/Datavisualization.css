@@ -1,0 +1,114 @@
+/* DataVisualization.css */
+
+/* Main container for the data visualization */
+.visualization-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  background: linear-gradient(145deg, #f9fafb, #e3e8ed);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Smooth hover effect for the container */
+.visualization-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Title for the data visualization */
+.visualization-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #34495e;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Chart container for adjusting the appearance */
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Adjust the canvas for the chart */
+.chart-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 400px;
+}
+
+/* No data message styling */
+.no-data-message {
+  text-align: center;
+  color: #b0bec5;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 2rem;
+  background-color: #eceff1;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Chart toggle button styling with gradient */
+.chart-toggle-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.chart-toggle-buttons button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+  background-image: linear-gradient(to left, #ab68ca, #de67a3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chart-toggle-buttons button:hover {
+  background-image: linear-gradient(to left, #de67a3, #ab68ca);
+}
+
+.chart-toggle-buttons button:focus {
+  outline: none;
+  background-image: linear-gradient(to left, #8e55b2, #c25593);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .visualization-container {
+    padding: 1rem;
+  }
+
+  .visualization-title {
+    font-size: 1.8rem;
+  }
+  
+  .chart-container {
+    height: 300px;
+  }
+}

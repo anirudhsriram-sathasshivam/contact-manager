@@ -1,0 +1,141 @@
+/* Common button styling for gradient and hover */
+.edit-button, .delete-button, .save-button, .cancel-button, .add-task-button, .delete-task-button, .add-contact-button, .contact-item button {
+  cursor: pointer;
+  background-image: linear-gradient(to left, #ab68ca, #de67a3);
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.edit-button:hover, .delete-button:hover, .save-button:hover, .cancel-button:hover, .add-task-button:hover, .delete-task-button:hover, .add-contact-button:hover, .contact-item button:hover {
+  background-image: linear-gradient(to left, #de67a3, #ab68ca);
+}
+
+/* Title gradient styling */
+.contact-list h2 {
+  text-align: center;
+  font-size: 2em;
+  background-image: linear-gradient(to left, #ab68ca, #de67a3);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Section heading with gradient background */
+.contact-section h3 {
+  background-image: linear-gradient(to left, #ab68ca, #de67a3);
+  color: white;
+  padding: 10px 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Contact item container */
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styling for alerted contacts with distinct border and background */
+.contact-item.alerted {
+  border: 2px solid #ff9800; /* Orange border for alerted contacts */
+  background-color: #fff3e0; /* Light orange background for alert differentiation */
+}
+
+/* Container for edit and delete buttons */
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px;
+}
+
+.contact-item h4 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.contact-item p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.task-section h4 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Blurred disabled style */
+.blurred {
+  filter: blur(2px);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Task styling */
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.task span {
+  flex-grow: 1;
+}
+
+/* Task button styling with gradient */
+.task button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-image: linear-gradient(to left, #ab68ca, #de67a3);
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.task button:hover {
+  background-image: linear-gradient(to left, #de67a3, #ab68ca);
+}
